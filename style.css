@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background: #f5f7f7;
+    background-image: url('https://ipfs.filebase.io/ipfs/QmTA6GJ1RcWq3g2opHBLrxiTauZn3Vw8JVy1cL85PgKcZU');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.container {
+    margin: 20px 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    width: 100%;
+}
+
+#searchBar {
+    width: 100%;
+    padding: 5px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    max-width: 700px;
+}
+
+#searchBar input {
+    width: 90%;
+    padding: 15px;
+    border: none;
+    font-size: 16px;
+    border-radius: 50px;
+    font-size: 13px;
+    letter-spacing: 0.75px;
+}
+
+#searchBar input:focus {
+    outline: none;
+}
+
+#search {
+    background-color: #0387ff;
+    border-radius: 50px;
+    padding: 10px;
+    margin-right: 5px;
+    border: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#search img {
+    width: 18px;
+    height: 18px;
+    filter: invert(1)
+}
+
+#buttons {
+    display: flex;
+    margin: 20px 0px;
+    width: 700px;
+    gap: 30px;
+}
+
+#buttons button {
+    width: 120px;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+
+}
+
+#buttons button:hover,
+#showMore:hover {
+    background-color: #1f2c33;
+    color: white;
+    cursor: pointer;
+}
+
+
+.button-clicked {
+    background-color: #1f2c33;
+    color: white;
+}
+
+#content :nth-child(1) {
+    grid-column: span 2;
+}
+
+#content {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+}
+
+.news {
+    padding: 32px;
+    border-radius: 20px;
+    background: #fff;
+    box-shadow: rgba(3, 0, 92, 0.12) 0px 1px 3px, rgba(3, 0, 92, 0.07) 0px 4px 11px;
+}
+
+.news h1 {
+    font-size: 25px;
+}
+
+#showMore {
+    width: 120px;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    background-color: white;
+    box-shadow: rgba(3, 0, 92, 0.12) 0px 1px 3px, rgba(3, 0, 92, 0.07) 0px 4px 11px;
+    margin: 40px 0px;
+}
+
+.highlight {
+    color: #0387ff;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1035px) {
+
+    .container {
+        margin: 20px 20px;
+    }
+
+    #buttons {
+        width: 100%;
+        gap: 10px;
+    }
+
+    #buttons button {
+        width: 100%;
+    }
+
+    #content {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (max-width: 520px) {
+
+    #buttons {
+        width: 90vw;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #buttons button {
+        width: 120px;
+    }
+}
